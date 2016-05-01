@@ -10,5 +10,9 @@
  */
 
 module.exports = function(json) {
-
+  var str = '';
+  for(var key in json) {
+    str+= key + ':' + json[key] + ';';
+  }
+  return str;
 };
